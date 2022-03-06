@@ -1,27 +1,21 @@
 # URL Shortener
-[Live Demo](https://ishort-ly.herokuapp.com/)
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
+Project URL [Live Demo](https://ishort-ly.herokuapp.com/)
+This project was generated with version 10.0.5.
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Features:
+1. Users can hash the URL with/without the query string.
+2. Users can login and can see all the hashed URL's by the user along with the click count of that hashed URL.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Additional Features:
+Used jwt (JSON Web Token) for protecting the API routes.
+All the passwords are hashed before storing into the database using bycrypt.
+Same Email cannot be used for creating multiple users.
+Implemented Auth Guard at the frontend for protecting unauthorized access to the routes.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Steps to Run the Application:
+Open Terminal in the root directory of the project and type: ng serve --o
+Open another terminal in the root directory of the project and type: node server.js
